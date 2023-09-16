@@ -1,0 +1,492 @@
+@import "variables.css";
+@import "fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    color: var(--primary-color);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: "Canela",sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+h2 span{
+    color: var(--secondary-color);
+}
+
+h4{
+    font-family: "Inter",sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+}
+
+h5{
+    font-family: "Inter",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+}
+
+ul, li {
+    list-style: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+img {
+    object-fit: cover;
+}
+
+.btn {
+    padding: 12px 40px;
+    background-color: var(--secondary-color);
+    color: var(--bg1);
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.extra-color {
+    color: var(--secondary-color);
+}
+
+.wrapper {
+    background-image: url("../assets/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    mix-blend-mode: color-burn;
+
+    background-color: var(--bg1);
+    background-blend-mode: color-burn;
+}
+
+.container {
+    padding: 0 50px;
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
+.header__top {
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    font-family: "Canela", sans-serif;
+
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+}
+
+.header__logo-text {
+    margin-left: 8px;
+}
+
+
+.header__menu-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__menu-list {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 92px 0;
+}
+
+.header__title {
+    font-family: "Canela", sans-serif;
+    padding-top: 26px;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 77px;
+    color: var(--white-white-stich);
+}
+
+.header__title span {
+    color: var(--secondary-color);
+}
+
+.header__info {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header__text-info {
+    line-height: 26px;
+    padding-top: 20px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    gap: 36px;
+}
+
+
+.link {
+    font-family: "Inter", sans-serif;
+    color: var(--white-white-stich);
+    font-weight: 700;
+}
+
+.header__stats-list {
+    padding-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__stats-text {
+    font-family: "Canela", sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 500;
+}
+
+.header__stats-item {
+    position: relative;
+}
+
+.header__stats-item span {
+    color: var(--secondary-color);
+}
+
+.header__stats-item::after {
+    content: "";
+    position: absolute;
+    right: -28px;
+    top: 0;
+    height: 100%;
+    border-right: 1px solid var(--secondary-color);
+}
+
+.header__stats-item:nth-child(3)::after {
+    border: none;
+}
+
+.header__circle-text {
+    hyphens: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header__card {
+    position: relative;
+    padding-right: 51px;
+}
+
+.header__box svg {
+    top: 224px;
+    left: -13%;
+    position: absolute;
+}
+
+.header__box::before {
+    content: "";
+    background-color: var(--bg2);
+    display: block;
+    width: 631px;
+    height: 458px;
+    position: absolute;
+    filter: blur(200px);
+    right: 24%;
+    top: 25%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.header__time-card {
+    position: absolute;
+    background-color: var(--bg4);
+
+    border-radius: 16px;
+    box-shadow: 0 9px 50px 0 rgba(23, 36, 65, 0.04);
+    padding: 20px;
+    border-top: 1px solid var(--secondary-color);
+
+    width: 304px;
+    z-index: 5;
+    right: 0;
+    bottom: -15%;
+}
+
+.header__time-card-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+
+}
+
+.header__card-btn {
+    padding: 12px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background: transparent;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.header__card-text {
+    color: var(--secondary-color);
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+.text-card {
+    font-weight: 700;
+    line-height: 20px;
+}
+
+
+.gallery-art{
+    padding: 92px 0;
+}
+
+.gallery-art__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.gallery-art__text {
+    width: 510px;
+}
+
+.gallery-art__btn {
+    height: 52px;
+    align-self: end;
+}
+
+.gallery-art__cards-list {
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-art__card-item {
+    max-width: 410px;
+    padding: 20px;
+    border-top: 1px solid var(--secondary-color);
+    border-radius: 28px;
+    background-color: var(--bg4);
+    position: relative;
+}
+
+
+.gallery-art__card-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery__art-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.gallery-art__price{
+    text-transform: uppercase;
+}
+
+.gallery-art__inner-info{
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-art__time{
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    gap: 12px;
+
+    position: relative;
+}
+
+.gallery-art__time::before{
+    content: "Ending In";
+    position: absolute;
+    bottom: 35px;
+    line-height: 23px;
+    color: var(--white-dissable);
+    left: 0;
+}
+
+.gallery-art__price{
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+}
+
+.gallery-art__price::before{
+    content: url("../assets/images/svg/etherium.svg");
+}
+
+.gallery-art__time::after{
+    content: url("../assets/images/svg/clock.svg");
+    order: -1;
+}
+
+.gallery-art__btn{
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+}
+
+.gallery-art__card-item:nth-child(3)::after{
+    content: "";
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--bg2);
+    width: 434px;
+    height: 305px;
+
+    filter: blur(175px);
+    bottom: -30%;
+}
+
+.nft-create{
+    padding: 92px 0;
+}
+
+.nft-create__title span{
+    color: var(--secondary-color);
+}
+.nft-create__inner{
+    padding-top: 139px;
+}
+
+.nft-create__info{
+    max-width: 426px;
+}
+
+.nft-create__text{
+    color: var(--white-white-stich);
+    padding-top: 20px;
+}
+
+.nft-create__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft-create__btn{
+    position: relative;
+}
+
+.nft-create__btn::after{
+    content: "";
+    display: flex;
+    background-color: var(--extra-blue);
+    align-self: flex-end;
+    position: absolute;
+    width: 291px;
+    height: 257px;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    filter: blur(175px);
+}
+
+.nft-create__examples{
+    display: flex;
+    position: relative;
+    width: 680px;
+}
+
+
+.nft-create__image{
+    border-radius: 24px;
+    max-width: 410px;
+    position: absolute;
+}
+
+.nft-create__image_1{
+    left: -60px;
+    z-index: 5;
+}
+
+.nft-create__image_2{
+    right: 0;
+    bottom: -20%;
+}
+
+.nft-create__examples::after{
+    content: "";
+    display: flex;
+    position: absolute;
+
+    flex-wrap: wrap;
+    width: 346px;
+    height: 228px;
+    z-index: 1;
+    right: 0;
+    bottom: -100%;
+    background-color: var(--bg2);
+    filter: blur(125px);
+}
+
+.popular{
+    padding: 192px 0;
+}
+
+
+.popular__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular__btn{
+    background-color: var(--extra-btn-color);
+    max-height: 52px;
+}
